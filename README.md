@@ -1,16 +1,14 @@
-# cat_trivia
+# Cat Trivia
 
-A new Flutter project.
+A test task Flutter project for ProArea company.
 
-## Getting Started
+## Constraints
+- [x] Use Flutter BLoC package for State Management
+- [x] Use Retrofit package for API communication
+- [x] Use Hive for storing data on the device
 
-This project is a starting point for a Flutter application.
+I also tried to implement a clean architecture myself based on this project
+(https://github.com/alex-lemeshinsky/flutter_tdd_clean_architecture)[https://github.com/alex-lemeshinsky/flutter_tdd_clean_architecture]
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Demo
+![Demo](demo.gif)
