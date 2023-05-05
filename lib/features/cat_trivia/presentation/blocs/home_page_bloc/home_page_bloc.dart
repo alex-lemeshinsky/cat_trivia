@@ -13,23 +13,30 @@ part 'home_page_bloc.freezed.dart';
 class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
   final GetRandomCatFact getRandomCatFact;
 
-  HomePageBloc({required this.getRandomCatFact}) : super(const _Loading()) {
+  HomePageBloc({required this.getRandomCatFact})
+      : super(const _Loading(false)) {
     on<_LoadRandomFact>(_onLoadRandomFact);
+    on<_NetworkImageLoaded>(_onNetwrokImageLoaded);
   }
 
   void _onLoadRandomFact(_LoadRandomFact event, Emitter emit) async {
-    emit(const HomePageState.loading());
+    emit(const HomePageState.loading(false));
     try {
       final result = await getRandomCatFact(NoParams());
-      emit(HomePageState.loadedRandomFact(result));
+      emit(HomePageState.loadedRandomFact(result, state.networkImageLoaded));
     } catch (e) {
       emit(
         HomePageState.exception(
           Exception(
             "Cannot get the new fact about cats from the internet, check out already-loaded facts.",
           ),
+          state.networkImageLoaded,
         ),
       );
     }
+  }
+
+  void _onNetwrokImageLoaded(_NetworkImageLoaded event, Emitter emit) {
+    emit(state.copyWith(networkImageLoaded: true));
   }
 }

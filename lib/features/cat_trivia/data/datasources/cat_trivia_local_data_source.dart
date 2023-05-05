@@ -21,8 +21,7 @@ class CatTriviaLocalDataSourceImpl implements ICatTriviaLocalDataSource {
 
   @override
   Future<List<CatFact>> getSavedFacts() async {
-    final factsList = hiveBox.get("facts") as List<Map<String, dynamic>>?;
-
+    final factsList = hiveBox.get("facts") as List?;
     if (factsList != null) {
       return factsList.map((e) => CatFact.fromJson(e)).toList();
     } else {

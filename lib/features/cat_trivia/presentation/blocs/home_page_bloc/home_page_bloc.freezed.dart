@@ -19,32 +19,38 @@ mixin _$HomePageEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loadRandomFact,
+    required TResult Function() networkImageLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loadRandomFact,
+    TResult? Function()? networkImageLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loadRandomFact,
+    TResult Function()? networkImageLoaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoadRandomFact value) loadRandomFact,
+    required TResult Function(_NetworkImageLoaded value) networkImageLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_LoadRandomFact value)? loadRandomFact,
+    TResult? Function(_NetworkImageLoaded value)? networkImageLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoadRandomFact value)? loadRandomFact,
+    TResult Function(_NetworkImageLoaded value)? networkImageLoaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -107,6 +113,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loadRandomFact,
+    required TResult Function() networkImageLoaded,
   }) {
     return loadRandomFact();
   }
@@ -115,6 +122,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loadRandomFact,
+    TResult? Function()? networkImageLoaded,
   }) {
     return loadRandomFact?.call();
   }
@@ -123,6 +131,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loadRandomFact,
+    TResult Function()? networkImageLoaded,
     required TResult orElse(),
   }) {
     if (loadRandomFact != null) {
@@ -135,6 +144,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoadRandomFact value) loadRandomFact,
+    required TResult Function(_NetworkImageLoaded value) networkImageLoaded,
   }) {
     return loadRandomFact(this);
   }
@@ -143,6 +153,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_LoadRandomFact value)? loadRandomFact,
+    TResult? Function(_NetworkImageLoaded value)? networkImageLoaded,
   }) {
     return loadRandomFact?.call(this);
   }
@@ -151,6 +162,7 @@ class _$_LoadRandomFact implements _LoadRandomFact {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoadRandomFact value)? loadRandomFact,
+    TResult Function(_NetworkImageLoaded value)? networkImageLoaded,
     required TResult orElse(),
   }) {
     if (loadRandomFact != null) {
@@ -165,26 +177,131 @@ abstract class _LoadRandomFact implements HomePageEvent {
 }
 
 /// @nodoc
-mixin _$HomePageState {
+abstract class _$$_NetworkImageLoadedCopyWith<$Res> {
+  factory _$$_NetworkImageLoadedCopyWith(_$_NetworkImageLoaded value,
+          $Res Function(_$_NetworkImageLoaded) then) =
+      __$$_NetworkImageLoadedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_NetworkImageLoadedCopyWithImpl<$Res>
+    extends _$HomePageEventCopyWithImpl<$Res, _$_NetworkImageLoaded>
+    implements _$$_NetworkImageLoadedCopyWith<$Res> {
+  __$$_NetworkImageLoadedCopyWithImpl(
+      _$_NetworkImageLoaded _value, $Res Function(_$_NetworkImageLoaded) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_NetworkImageLoaded implements _NetworkImageLoaded {
+  const _$_NetworkImageLoaded();
+
+  @override
+  String toString() {
+    return 'HomePageEvent.networkImageLoaded()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_NetworkImageLoaded);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loading,
-    required TResult Function(CatFact fact) loadedRandomFact,
-    required TResult Function(Exception exception) exception,
+    required TResult Function() loadRandomFact,
+    required TResult Function() networkImageLoaded,
+  }) {
+    return networkImageLoaded();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loadRandomFact,
+    TResult? Function()? networkImageLoaded,
+  }) {
+    return networkImageLoaded?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? loadRandomFact,
+    TResult Function()? networkImageLoaded,
+    required TResult orElse(),
+  }) {
+    if (networkImageLoaded != null) {
+      return networkImageLoaded();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadRandomFact value) loadRandomFact,
+    required TResult Function(_NetworkImageLoaded value) networkImageLoaded,
+  }) {
+    return networkImageLoaded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_LoadRandomFact value)? loadRandomFact,
+    TResult? Function(_NetworkImageLoaded value)? networkImageLoaded,
+  }) {
+    return networkImageLoaded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadRandomFact value)? loadRandomFact,
+    TResult Function(_NetworkImageLoaded value)? networkImageLoaded,
+    required TResult orElse(),
+  }) {
+    if (networkImageLoaded != null) {
+      return networkImageLoaded(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _NetworkImageLoaded implements HomePageEvent {
+  const factory _NetworkImageLoaded() = _$_NetworkImageLoaded;
+}
+
+/// @nodoc
+mixin _$HomePageState {
+  bool get networkImageLoaded => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(bool networkImageLoaded) loading,
+    required TResult Function(CatFact fact, bool networkImageLoaded)
+        loadedRandomFact,
+    required TResult Function(Exception exception, bool networkImageLoaded)
+        exception,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loading,
-    TResult? Function(CatFact fact)? loadedRandomFact,
-    TResult? Function(Exception exception)? exception,
+    TResult? Function(bool networkImageLoaded)? loading,
+    TResult? Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult? Function(Exception exception, bool networkImageLoaded)? exception,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(CatFact fact)? loadedRandomFact,
-    TResult Function(Exception exception)? exception,
+    TResult Function(bool networkImageLoaded)? loading,
+    TResult Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult Function(Exception exception, bool networkImageLoaded)? exception,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -210,6 +327,10 @@ mixin _$HomePageState {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $HomePageStateCopyWith<HomePageState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -217,6 +338,8 @@ abstract class $HomePageStateCopyWith<$Res> {
   factory $HomePageStateCopyWith(
           HomePageState value, $Res Function(HomePageState) then) =
       _$HomePageStateCopyWithImpl<$Res, HomePageState>;
+  @useResult
+  $Res call({bool networkImageLoaded});
 }
 
 /// @nodoc
@@ -228,13 +351,30 @@ class _$HomePageStateCopyWithImpl<$Res, $Val extends HomePageState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? networkImageLoaded = null,
+  }) {
+    return _then(_value.copyWith(
+      networkImageLoaded: null == networkImageLoaded
+          ? _value.networkImageLoaded
+          : networkImageLoaded // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
 }
 
 /// @nodoc
-abstract class _$$_LoadingCopyWith<$Res> {
+abstract class _$$_LoadingCopyWith<$Res>
+    implements $HomePageStateCopyWith<$Res> {
   factory _$$_LoadingCopyWith(
           _$_Loading value, $Res Function(_$_Loading) then) =
       __$$_LoadingCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({bool networkImageLoaded});
 }
 
 /// @nodoc
@@ -243,57 +383,84 @@ class __$$_LoadingCopyWithImpl<$Res>
     implements _$$_LoadingCopyWith<$Res> {
   __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? networkImageLoaded = null,
+  }) {
+    return _then(_$_Loading(
+      null == networkImageLoaded
+          ? _value.networkImageLoaded
+          : networkImageLoaded // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
+  }
 }
 
 /// @nodoc
 
 class _$_Loading implements _Loading {
-  const _$_Loading();
+  const _$_Loading(this.networkImageLoaded);
+
+  @override
+  final bool networkImageLoaded;
 
   @override
   String toString() {
-    return 'HomePageState.loading()';
+    return 'HomePageState.loading(networkImageLoaded: $networkImageLoaded)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Loading);
+        (other.runtimeType == runtimeType &&
+            other is _$_Loading &&
+            (identical(other.networkImageLoaded, networkImageLoaded) ||
+                other.networkImageLoaded == networkImageLoaded));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, networkImageLoaded);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_LoadingCopyWith<_$_Loading> get copyWith =>
+      __$$_LoadingCopyWithImpl<_$_Loading>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loading,
-    required TResult Function(CatFact fact) loadedRandomFact,
-    required TResult Function(Exception exception) exception,
+    required TResult Function(bool networkImageLoaded) loading,
+    required TResult Function(CatFact fact, bool networkImageLoaded)
+        loadedRandomFact,
+    required TResult Function(Exception exception, bool networkImageLoaded)
+        exception,
   }) {
-    return loading();
+    return loading(networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loading,
-    TResult? Function(CatFact fact)? loadedRandomFact,
-    TResult? Function(Exception exception)? exception,
+    TResult? Function(bool networkImageLoaded)? loading,
+    TResult? Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult? Function(Exception exception, bool networkImageLoaded)? exception,
   }) {
-    return loading?.call();
+    return loading?.call(networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(CatFact fact)? loadedRandomFact,
-    TResult Function(Exception exception)? exception,
+    TResult Function(bool networkImageLoaded)? loading,
+    TResult Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult Function(Exception exception, bool networkImageLoaded)? exception,
     required TResult orElse(),
   }) {
     if (loading != null) {
-      return loading();
+      return loading(networkImageLoaded);
     }
     return orElse();
   }
@@ -334,16 +501,25 @@ class _$_Loading implements _Loading {
 }
 
 abstract class _Loading implements HomePageState {
-  const factory _Loading() = _$_Loading;
+  const factory _Loading(final bool networkImageLoaded) = _$_Loading;
+
+  @override
+  bool get networkImageLoaded;
+  @override
+  @JsonKey(ignore: true)
+  _$$_LoadingCopyWith<_$_Loading> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LoadedRandomFactCopyWith<$Res> {
+abstract class _$$_LoadedRandomFactCopyWith<$Res>
+    implements $HomePageStateCopyWith<$Res> {
   factory _$$_LoadedRandomFactCopyWith(
           _$_LoadedRandomFact value, $Res Function(_$_LoadedRandomFact) then) =
       __$$_LoadedRandomFactCopyWithImpl<$Res>;
+  @override
   @useResult
-  $Res call({CatFact fact});
+  $Res call({CatFact fact, bool networkImageLoaded});
 
   $CatFactCopyWith<$Res> get fact;
 }
@@ -360,12 +536,17 @@ class __$$_LoadedRandomFactCopyWithImpl<$Res>
   @override
   $Res call({
     Object? fact = null,
+    Object? networkImageLoaded = null,
   }) {
     return _then(_$_LoadedRandomFact(
       null == fact
           ? _value.fact
           : fact // ignore: cast_nullable_to_non_nullable
               as CatFact,
+      null == networkImageLoaded
+          ? _value.networkImageLoaded
+          : networkImageLoaded // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 
@@ -381,14 +562,16 @@ class __$$_LoadedRandomFactCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_LoadedRandomFact implements _LoadedRandomFact {
-  const _$_LoadedRandomFact(this.fact);
+  const _$_LoadedRandomFact(this.fact, this.networkImageLoaded);
 
   @override
   final CatFact fact;
+  @override
+  final bool networkImageLoaded;
 
   @override
   String toString() {
-    return 'HomePageState.loadedRandomFact(fact: $fact)';
+    return 'HomePageState.loadedRandomFact(fact: $fact, networkImageLoaded: $networkImageLoaded)';
   }
 
   @override
@@ -396,11 +579,13 @@ class _$_LoadedRandomFact implements _LoadedRandomFact {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LoadedRandomFact &&
-            (identical(other.fact, fact) || other.fact == fact));
+            (identical(other.fact, fact) || other.fact == fact) &&
+            (identical(other.networkImageLoaded, networkImageLoaded) ||
+                other.networkImageLoaded == networkImageLoaded));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, fact);
+  int get hashCode => Object.hash(runtimeType, fact, networkImageLoaded);
 
   @JsonKey(ignore: true)
   @override
@@ -411,33 +596,35 @@ class _$_LoadedRandomFact implements _LoadedRandomFact {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loading,
-    required TResult Function(CatFact fact) loadedRandomFact,
-    required TResult Function(Exception exception) exception,
+    required TResult Function(bool networkImageLoaded) loading,
+    required TResult Function(CatFact fact, bool networkImageLoaded)
+        loadedRandomFact,
+    required TResult Function(Exception exception, bool networkImageLoaded)
+        exception,
   }) {
-    return loadedRandomFact(fact);
+    return loadedRandomFact(fact, networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loading,
-    TResult? Function(CatFact fact)? loadedRandomFact,
-    TResult? Function(Exception exception)? exception,
+    TResult? Function(bool networkImageLoaded)? loading,
+    TResult? Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult? Function(Exception exception, bool networkImageLoaded)? exception,
   }) {
-    return loadedRandomFact?.call(fact);
+    return loadedRandomFact?.call(fact, networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(CatFact fact)? loadedRandomFact,
-    TResult Function(Exception exception)? exception,
+    TResult Function(bool networkImageLoaded)? loading,
+    TResult Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult Function(Exception exception, bool networkImageLoaded)? exception,
     required TResult orElse(),
   }) {
     if (loadedRandomFact != null) {
-      return loadedRandomFact(fact);
+      return loadedRandomFact(fact, networkImageLoaded);
     }
     return orElse();
   }
@@ -478,21 +665,27 @@ class _$_LoadedRandomFact implements _LoadedRandomFact {
 }
 
 abstract class _LoadedRandomFact implements HomePageState {
-  const factory _LoadedRandomFact(final CatFact fact) = _$_LoadedRandomFact;
+  const factory _LoadedRandomFact(
+      final CatFact fact, final bool networkImageLoaded) = _$_LoadedRandomFact;
 
   CatFact get fact;
+  @override
+  bool get networkImageLoaded;
+  @override
   @JsonKey(ignore: true)
   _$$_LoadedRandomFactCopyWith<_$_LoadedRandomFact> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ExceptionCopyWith<$Res> {
+abstract class _$$_ExceptionCopyWith<$Res>
+    implements $HomePageStateCopyWith<$Res> {
   factory _$$_ExceptionCopyWith(
           _$_Exception value, $Res Function(_$_Exception) then) =
       __$$_ExceptionCopyWithImpl<$Res>;
+  @override
   @useResult
-  $Res call({Exception exception});
+  $Res call({Exception exception, bool networkImageLoaded});
 }
 
 /// @nodoc
@@ -507,12 +700,17 @@ class __$$_ExceptionCopyWithImpl<$Res>
   @override
   $Res call({
     Object? exception = null,
+    Object? networkImageLoaded = null,
   }) {
     return _then(_$_Exception(
       null == exception
           ? _value.exception
           : exception // ignore: cast_nullable_to_non_nullable
               as Exception,
+      null == networkImageLoaded
+          ? _value.networkImageLoaded
+          : networkImageLoaded // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -520,14 +718,16 @@ class __$$_ExceptionCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Exception implements _Exception {
-  const _$_Exception(this.exception);
+  const _$_Exception(this.exception, this.networkImageLoaded);
 
   @override
   final Exception exception;
+  @override
+  final bool networkImageLoaded;
 
   @override
   String toString() {
-    return 'HomePageState.exception(exception: $exception)';
+    return 'HomePageState.exception(exception: $exception, networkImageLoaded: $networkImageLoaded)';
   }
 
   @override
@@ -536,11 +736,13 @@ class _$_Exception implements _Exception {
         (other.runtimeType == runtimeType &&
             other is _$_Exception &&
             (identical(other.exception, exception) ||
-                other.exception == exception));
+                other.exception == exception) &&
+            (identical(other.networkImageLoaded, networkImageLoaded) ||
+                other.networkImageLoaded == networkImageLoaded));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, exception);
+  int get hashCode => Object.hash(runtimeType, exception, networkImageLoaded);
 
   @JsonKey(ignore: true)
   @override
@@ -551,33 +753,35 @@ class _$_Exception implements _Exception {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loading,
-    required TResult Function(CatFact fact) loadedRandomFact,
-    required TResult Function(Exception exception) exception,
+    required TResult Function(bool networkImageLoaded) loading,
+    required TResult Function(CatFact fact, bool networkImageLoaded)
+        loadedRandomFact,
+    required TResult Function(Exception exception, bool networkImageLoaded)
+        exception,
   }) {
-    return exception(this.exception);
+    return exception(this.exception, networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loading,
-    TResult? Function(CatFact fact)? loadedRandomFact,
-    TResult? Function(Exception exception)? exception,
+    TResult? Function(bool networkImageLoaded)? loading,
+    TResult? Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult? Function(Exception exception, bool networkImageLoaded)? exception,
   }) {
-    return exception?.call(this.exception);
+    return exception?.call(this.exception, networkImageLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(CatFact fact)? loadedRandomFact,
-    TResult Function(Exception exception)? exception,
+    TResult Function(bool networkImageLoaded)? loading,
+    TResult Function(CatFact fact, bool networkImageLoaded)? loadedRandomFact,
+    TResult Function(Exception exception, bool networkImageLoaded)? exception,
     required TResult orElse(),
   }) {
     if (exception != null) {
-      return exception(this.exception);
+      return exception(this.exception, networkImageLoaded);
     }
     return orElse();
   }
@@ -618,9 +822,13 @@ class _$_Exception implements _Exception {
 }
 
 abstract class _Exception implements HomePageState {
-  const factory _Exception(final Exception exception) = _$_Exception;
+  const factory _Exception(
+      final Exception exception, final bool networkImageLoaded) = _$_Exception;
 
   Exception get exception;
+  @override
+  bool get networkImageLoaded;
+  @override
   @JsonKey(ignore: true)
   _$$_ExceptionCopyWith<_$_Exception> get copyWith =>
       throw _privateConstructorUsedError;

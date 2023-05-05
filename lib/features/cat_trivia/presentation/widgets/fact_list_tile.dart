@@ -15,6 +15,8 @@ class FactListTile extends StatelessWidget {
       title: Text(fact.text),
       subtitle: Text(
         "Created at ${DateFormat.yMd(Platform.localeName).format(fact.createdAt)}",
+        maxLines: 5,
+        overflow: TextOverflow.clip,
       ),
     );
   }
